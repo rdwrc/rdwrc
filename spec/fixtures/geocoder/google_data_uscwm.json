@@ -1,0 +1,69 @@
+{
+   "_comment_" : "http://maps.google.com/maps/api/geocode/json?address=1605+E+Elizabeth+St.,Pasadena,CA,91104,USA&sensor=false",
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "1605",
+               "short_name" : "1605",
+               "types" : [ "street_number" ]
+            },
+            {
+               "long_name" : "William Carey International University",
+               "short_name" : "William Carey International University",
+               "types" : [ "establishment" ]
+            },
+            {
+               "long_name" : "East Elizabeth Street",
+               "short_name" : "E Elizabeth St",
+               "types" : [ "route" ]
+            },
+            {
+               "long_name" : "Pasadena",
+               "short_name" : "Pasadena",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Los Angeles",
+               "short_name" : "Los Angeles",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "California",
+               "short_name" : "CA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            },
+            {
+               "long_name" : "91104",
+               "short_name" : "91104",
+               "types" : [ "postal_code" ]
+            }
+         ],
+         "formatted_address" : "1605 East Elizabeth Street, William Carey International University, Pasadena, CA 91104, USA",
+         "geometry" : {
+            "location" : {
+               "lat" : 34.174259,
+               "lng" : -118.117683
+            },
+            "location_type" : "ROOFTOP",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 34.1756079802915,
+                  "lng" : -118.1163340197085
+               },
+               "southwest" : {
+                  "lat" : 34.1729100197085,
+                  "lng" : -118.1190319802915
+               }
+            }
+         },
+         "types" : [ "street_address" ]
+      }
+   ],
+   "status" : "OK"
+}

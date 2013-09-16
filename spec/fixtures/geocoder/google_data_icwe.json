@@ -1,0 +1,59 @@
+{
+   "_comments_" : "http://maps.google.com/maps/api/geocode/json?address=Lausanne,Switzerland&sensor=false",
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Lausanne",
+               "short_name" : "Lausanne",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Lausanne",
+               "short_name" : "Lausanne",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Vaud",
+               "short_name" : "VD",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Switzerland",
+               "short_name" : "CH",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Lausanne, Switzerland",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 46.60232999999999,
+                  "lng" : 6.72084
+               },
+               "southwest" : {
+                  "lat" : 46.5042984,
+                  "lng" : 6.5841499
+               }
+            },
+            "location" : {
+               "lat" : 46.5199617,
+               "lng" : 6.633597099999999
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 46.60232999999999,
+                  "lng" : 6.72084
+               },
+               "southwest" : {
+                  "lat" : 46.5042984,
+                  "lng" : 6.5841499
+               }
+            }
+         },
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}

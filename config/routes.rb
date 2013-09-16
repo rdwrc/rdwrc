@@ -1,4 +1,5 @@
 Rdwrc::Application.routes.draw do
+
   devise_for :users
 
   # The priority is based upon order of creation:
@@ -58,5 +59,6 @@ Rdwrc::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
-  root :to => "home#index"
+  get "welcome/index"
+  root to: "welcome#index"
 end
