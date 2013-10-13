@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131013104233) do
+ActiveRecord::Schema.define(:version => 20131013121116) do
 
   create_table "articles", :force => true do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20131013104233) do
     t.string   "file_content_type"
     t.integer  "file_file_size"
     t.datetime "file_updated_at"
+    t.string   "state"
   end
 
   create_table "articles_categories", :id => false, :force => true do |t|

@@ -27,6 +27,14 @@ describe Article do
       @tags = "evangelism, cross-cultural, Christians, church, world, congregation"
       subject.tags.map(&:name).join(', ').should eq @tags
       subject.user.owned_tags.map(&:name).join(', ').should eq @tags
+
+      subject.state.should eq 'no_file_exists'
+      subject.upload_file!
+      subject.state.should eq 'file_uploaded'
+      subject.edit_file!
+      subject.state.should eq 'edited'
+      subject.publish_file!
+      subject.state.should eq 'published'
     end
   end
 end
