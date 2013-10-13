@@ -11,15 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130916210010) do
+ActiveRecord::Schema.define(:version => 20131013104233) do
 
   create_table "articles", :force => true do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "event_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
     t.integer  "user_id"
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
   end
 
   create_table "articles_categories", :id => false, :force => true do |t|
@@ -64,6 +68,13 @@ ActiveRecord::Schema.define(:version => 20130916210010) do
     t.string   "country"
   end
 
+  create_table "roles", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "taggings", :force => true do |t|
     t.integer  "tag_id"
     t.integer  "taggable_id"
@@ -80,6 +91,16 @@ ActiveRecord::Schema.define(:version => 20130916210010) do
   create_table "tags", :force => true do |t|
     t.string "name"
   end
+
+  create_table "user_roles", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "role_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "user_roles", ["role_id"], :name => "index_user_roles_on_role_id"
+  add_index "user_roles", ["user_id"], :name => "index_user_roles_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -101,10 +122,6 @@ ActiveRecord::Schema.define(:version => 20130916210010) do
     t.datetime "locked_at"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
-    t.boolean  "admin"
-    t.boolean  "editor"
-    t.boolean  "author"
-    t.boolean  "contributor"
     t.string   "name"
   end
 

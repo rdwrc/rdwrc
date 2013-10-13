@@ -1,28 +1,53 @@
 class User < ActiveRecord::Base
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :trackable, :validatable,
-         :confirmable, :lockable, :timeoutable
+  devise *[
+    :confirmable,
+    :database_authenticatable,
+    :lockable,
+    :recoverable,
+    :registerable,
+    :rememberable,
+    :timeoutable,
+    :trackable,
+    :validatable
+  ]
 
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me
-  attr_accessible :admin, :editor, :author, :contributor
+
+  has_many :user_roles, :dependent => :destroy
+  has_many :roles, :through => :user_roles
+  accepts_nested_attributes_for :user_roles, :allow_destroy => true
 
   has_many :articles
 
+  validates :email, :uniqueness => true, :unless => 'email.blank?'
+
   acts_as_tagger
 
-  def admin?
-    admin
+  before_save do
+    set_role
   end
 
-  def editor?
-    editor
+  %w(admin editor author contributor guest).each do |role_code|
+    define_method "#{role_code}?" do
+      roles.any? { |role| role.code.to_s == role_code.to_s }
+    end
   end
 
-  def author?
-    author
+  # order is from most to least privileged
+  def primary_role
+    return :admin if admin?
+    return :editor if editor?
+    return :author if author?
+    return :contributor if contributor?
+    return :guest
   end
 
-  def contributor?
-    contributor
+  def primary_role?
+    roles.include? primary_role
+  end
+
+  private
+  def set_role
+    self.roles << Role.find_or_create_by_code(:email, :name => primary_role) unless primary_role?
   end
 end
