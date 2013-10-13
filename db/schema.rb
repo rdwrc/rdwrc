@@ -11,21 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131013121116) do
+ActiveRecord::Schema.define(:version => 20131013163300) do
 
   create_table "articles", :force => true do |t|
     t.string   "name"
     t.text     "description"
     t.integer  "event_id"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.integer  "user_id"
-    t.string   "file_file_name"
-    t.string   "file_content_type"
-    t.integer  "file_file_size"
-    t.datetime "file_updated_at"
     t.string   "state"
+    t.integer  "original_file_id"
   end
+
+  add_index "articles", ["event_id"], :name => "index_articles_on_event_id"
+  add_index "articles", ["original_file_id"], :name => "index_articles_on_original_file_id"
+  add_index "articles", ["user_id"], :name => "index_articles_on_user_id"
 
   create_table "articles_categories", :id => false, :force => true do |t|
     t.integer "article_id"
@@ -57,6 +58,8 @@ ActiveRecord::Schema.define(:version => 20131013121116) do
     t.datetime "updated_at",  :null => false
   end
 
+  add_index "events", ["location_id"], :name => "index_events_on_location_id"
+
   create_table "locations", :force => true do |t|
     t.string   "address"
     t.string   "city"
@@ -68,6 +71,18 @@ ActiveRecord::Schema.define(:version => 20131013121116) do
     t.datetime "updated_at",                                 :null => false
     t.string   "country"
   end
+
+  create_table "original_files", :force => true do |t|
+    t.integer  "article_id"
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  add_index "original_files", ["article_id"], :name => "index_original_files_on_article_id"
 
   create_table "roles", :force => true do |t|
     t.string   "code"

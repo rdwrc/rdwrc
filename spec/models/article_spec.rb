@@ -28,6 +28,11 @@ describe Article do
       subject.tags.map(&:name).join(', ').should eq @tags
       subject.user.owned_tags.map(&:name).join(', ').should eq @tags
 
+      # load an real PDF file
+      subject.original_file = FactoryGirl.create(:pdf_file)
+      #subject.original_file = PDF::Reader.new(pdf_file)
+
+      # test different state transitions work correctly
       subject.state.should eq 'no_file_exists'
       subject.upload_file!
       subject.state.should eq 'file_uploaded'

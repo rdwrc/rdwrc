@@ -1,15 +1,15 @@
 class Article < ActiveRecord::Base
-  attr_accessible :description, :name, :file
+  attr_accessible :description, :name, :original_file
 
   belongs_to :event
   belongs_to :user
 
+  belongs_to :original_file
+  accepts_nested_attributes_for :original_file, :allow_destroy => true
+
   has_and_belongs_to_many :categories
 
   acts_as_ordered_taggable
-
-  has_attached_file :file
-  after_post_process :convert_to_text
 
   state_machine :initial => :no_file_exists do
     state :no_file_exists
@@ -26,9 +26,5 @@ class Article < ActiveRecord::Base
     event :publish_file! do
       transition [:edited] => :published
     end
-  end
-
-  def convert_to_text
-    system("image_to_text.sh #{file}")
   end
 end

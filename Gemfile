@@ -12,6 +12,7 @@ gem 'devise'
 gem 'state_machine'
 gem 'acts-as-taggable-on'
 gem 'paperclip', '~> 3.0'
+gem 'pdf-reader'
 gem 'will_paginate', '~> 3.0.0'
 gem 'geocoder'
 
