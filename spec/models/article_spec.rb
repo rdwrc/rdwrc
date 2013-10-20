@@ -29,16 +29,16 @@ describe Article do
       subject.user.owned_tags.map(&:name).join(', ').should eq @tags
 
       # load an real PDF file
-      subject.original_file = FactoryGirl.create(:pdf_file)
-      #subject.original_file = PDF::Reader.new(pdf_file)
+      subject.upload = FactoryGirl.create(:pdf_file)
+      subject.upload.text.should_not be nil
 
       # test different state transitions work correctly
-      subject.state.should eq 'no_file_exists'
-      subject.upload_file!
-      subject.state.should eq 'file_uploaded'
-      subject.edit_file!
+      subject.state.should eq 'no_asset_exists'
+      subject.upload_asset!
+      subject.state.should eq 'asset_uploaded'
+      subject.edit_asset!
       subject.state.should eq 'edited'
-      subject.publish_file!
+      subject.publish_asset!
       subject.state.should eq 'published'
     end
   end

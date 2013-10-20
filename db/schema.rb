@@ -17,15 +17,15 @@ ActiveRecord::Schema.define(:version => 20131013163300) do
     t.string   "name"
     t.text     "description"
     t.integer  "event_id"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.integer  "user_id"
     t.string   "state"
-    t.integer  "original_file_id"
+    t.integer  "upload_id"
   end
 
   add_index "articles", ["event_id"], :name => "index_articles_on_event_id"
-  add_index "articles", ["original_file_id"], :name => "index_articles_on_original_file_id"
+  add_index "articles", ["upload_id"], :name => "index_articles_on_upload_id"
   add_index "articles", ["user_id"], :name => "index_articles_on_user_id"
 
   create_table "articles_categories", :id => false, :force => true do |t|
@@ -72,18 +72,6 @@ ActiveRecord::Schema.define(:version => 20131013163300) do
     t.string   "country"
   end
 
-  create_table "original_files", :force => true do |t|
-    t.integer  "article_id"
-    t.string   "file_file_name"
-    t.string   "file_content_type"
-    t.integer  "file_file_size"
-    t.datetime "file_updated_at"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
-  end
-
-  add_index "original_files", ["article_id"], :name => "index_original_files_on_article_id"
-
   create_table "roles", :force => true do |t|
     t.string   "code"
     t.string   "name"
@@ -107,6 +95,22 @@ ActiveRecord::Schema.define(:version => 20131013163300) do
   create_table "tags", :force => true do |t|
     t.string "name"
   end
+
+  create_table "uploads", :force => true do |t|
+    t.integer  "article_id"
+    t.string   "asset_file_name"
+    t.string   "asset_content_type"
+    t.integer  "asset_file_size"
+    t.datetime "asset_updated_at"
+    t.string   "text_file_name"
+    t.string   "text_content_type"
+    t.integer  "text_file_size"
+    t.datetime "text_updated_at"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+  end
+
+  add_index "uploads", ["article_id"], :name => "index_uploads_on_article_id"
 
   create_table "user_roles", :force => true do |t|
     t.integer  "user_id"

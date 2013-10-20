@@ -1,15 +1,17 @@
-#!/bin/bash
+#!/bin/bash -v
 #
 # see http://code.google.com/p/tesseract-ocr/
 # see http://www.sk-spell.sk.cx/tesseract-ocr-parameters-in-302-version
 #
-if [ $# != 1 ]; then
-  echo "$0: PDF or image file is the only argument"
+if [ $# != 2 ]; then
+  echo "$0: [1]=PDF or image file, [2]=output file name"
   exit 1
 fi
 output_folder='/tmp'
 filename=$1
-basename="${filename%.[^.]*}"
+basename=`basename "${filename%.[^.]*}"`
+#output_file=`echo $basename | sed 's/\(.*\)\..*/\1/'`.txt
+output_file=$2
 tmp_file_name="output`date +%s`"
 
 convert -density 300 "$filename" -depth 8 $tmp_file_name.png
@@ -23,7 +25,13 @@ do
   count=`expr $count + 1`
 done
 rm $tmp_file_name*.png
-cat "$output_folder/$basename"*.txt > "$basename".txt
+cat "$output_folder/$basename"*.txt > "$output_file"
 rm "$output_folder/$basename"*.txt
 
-echo "CREATED '$basename.txt"
+if [[ -s $output_file ]] ; then
+  echo "CREATED '$output_file"
+else
+  echo "$output_file is empty."
+  exit -1
+fi
+

@@ -5,7 +5,7 @@ class AssociateFilesWithArticles < ActiveRecord::Migration
     remove_column :articles, :file_file_size
     remove_column :articles, :file_updated_at
 
-    add_column :articles, :original_file_id, :integer
+    add_column :articles, :upload_id, :integer
   end
 
   def down
@@ -14,6 +14,6 @@ class AssociateFilesWithArticles < ActiveRecord::Migration
     add_column :articles, :file_file_size, :integer
     add_column :articles, :file_updated_at, :datetime
 
-    remove_column :articles, :original_file_id
+    remove_column :articles, :upload_id
   end
 end

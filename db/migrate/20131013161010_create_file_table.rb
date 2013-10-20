@@ -1,11 +1,12 @@
 class CreateFileTable < ActiveRecord::Migration
   def change
-    create_table :original_files do |t|
+    create_table :uploads do |t|
       t.integer :article_id
-      t.attachment :file
+      t.attachment :asset
+      t.attachment :text
       t.timestamps
     end
 
-    add_index :original_files, :article_id
+    add_index :uploads, :article_id
   end
 end

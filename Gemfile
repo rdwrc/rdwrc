@@ -12,7 +12,6 @@ gem 'devise'
 gem 'state_machine'
 gem 'acts-as-taggable-on'
 gem 'paperclip', '~> 3.0'
-gem 'pdf-reader'
 gem 'will_paginate', '~> 3.0.0'
 gem 'geocoder'
 
@@ -35,6 +34,9 @@ group :development do
   gem 'factory_girl_rails', '~> 4.2'
   gem 'rspec', '~> 2.14'
   gem 'rspec-rails', '~> 2.14'
+
+  gem 'debugger'
+  gem 'pry-rails'
 end
 
 # To use ActiveModel has_secure_password
