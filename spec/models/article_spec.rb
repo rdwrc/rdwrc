@@ -28,8 +28,12 @@ describe Article do
       subject.tags.map(&:name).join(', ').should eq @tags
       subject.user.owned_tags.map(&:name).join(', ').should eq @tags
 
-      # load an real PDF file
+      # load a real PDF file
       subject.upload = FactoryGirl.create(:pdf_file)
+      subject.upload.text.should_not be nil
+
+      # load a real image file
+      subject.upload = FactoryGirl.create(:image_file)
       subject.upload.text.should_not be nil
 
       # test different state transitions work correctly
