@@ -1,9 +1,6 @@
 require 'geocoder'
 
 class Location < ActiveRecord::Base
-  attr_accessible :address, :city, :state, :zip, :country,
-                  :latitude, :longitude
-
   has_many :events
 
   # see http://rdoc.info/github/alexreisner/geocoder/master/frames
@@ -30,7 +27,7 @@ class Location < ActiveRecord::Base
     if latitude.nil? || longitude.nil?
       return nil
     end
-    {:latitude => latitude, :longitude => longitude }
+    { latitude: latitude, longitude: longitude }
   end
 
   def full_street_address

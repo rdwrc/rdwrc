@@ -9,11 +9,11 @@ class Ability
     elsif user.editor?
       can :manage, Article
     elsif user.author?
-      can :manage, Article, :user_id => user.id
+      can :manage, Article, user_id: user.id
     elsif user.contributor?
-      can :create, Article, :user_id => user.id
-      can :read, Article, :user_id => user.id
-      can :update, Article, :user_id => user.id
+      can :create, Article, user_id: user.id
+      can :read, Article, user_id: user.id
+      can :update, Article, user_id: user.id
     else
       can :read, :all
     end
@@ -39,7 +39,7 @@ class Ability
     # objects.
     # For example, here the user can only update published articles.
     #
-    #   can :update, Article, :published => true
+    #   can :update, Article, published: true
     #
     # See the wiki for details:
     # https://github.com/ryanb/cancan/wiki/Defining-Abilities

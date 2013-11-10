@@ -1,11 +1,9 @@
 class Upload < ActiveRecord::Base
-  has_many :articles, :dependent => :destroy, :inverse_of => :asset
-  accepts_nested_attributes_for :articles, :allow_destroy => true
-
-  attr_accessible :asset, :text
+  has_many :articles, :dependent => :destroy, inverse_of: :asset
+  accepts_nested_attributes_for :articles, allow_destroy: true
 
   # see https://github.com/thoughtbot/paperclip (must supply :styles or else processor will not run)
-  #has_attached_file :asset, :styles => { :text => { :quality => :best } }, :processors => [:ocr]
+  #has_attached_file :asset, styles: { text: { quality: :best } }, processors: [:ocr]
 
   has_attached_file :asset
   has_attached_file :text

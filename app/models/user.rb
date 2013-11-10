@@ -11,15 +11,13 @@ class User < ActiveRecord::Base
     :validatable
   ]
 
-  attr_accessible :name, :email, :password, :password_confirmation, :remember_me
-
-  has_many :user_roles, :dependent => :destroy
-  has_many :roles, :through => :user_roles
-  accepts_nested_attributes_for :user_roles, :allow_destroy => true
+  has_many :user_roles, dependent: :destroy
+  has_many :roles, through: :user_roles
+  accepts_nested_attributes_for :user_roles, allow_destroy: true
 
   has_many :articles
 
-  validates :email, :uniqueness => true, :unless => 'email.blank?'
+  validates :email, uniqueness: true, unless: 'email.blank?'
 
   acts_as_tagger
 
@@ -48,6 +46,6 @@ class User < ActiveRecord::Base
 
   private
   def set_role
-    self.roles << Role.find_or_create_by_code(:email, :name => primary_role) unless primary_role?
+    self.roles << Role.find_or_create_by(code: :email, name: primary_role) unless primary_role?
   end
 end
