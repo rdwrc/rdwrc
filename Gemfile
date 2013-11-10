@@ -17,21 +17,18 @@ gem 'geocoder'
 gem 'bootstrap-sass'
 gem 'simple_form', '>= 3.0.0.rc'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '~> 4.0.0'
-  gem 'coffee-rails', '~> 4.0.0'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
-  gem 'uglifier', '>= 1.3.0'
-end
+gem 'sass-rails',   '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.0'
+gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
 
+group :production do
+  gem 'therubyracer', '~> 0.12'
+end
+
 group :development do
+  gem 'quiet_assets'
   gem 'factory_girl', '~> 4.2'
   gem 'factory_girl_rails', '~> 4.2'
   gem 'rspec', '~> 2.14'
