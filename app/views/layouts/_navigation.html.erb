@@ -1,21 +1,26 @@
-<%= link_to "Home", root_path, :class => 'brand' %>
-<ul class="nav">
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to('Logout', destroy_user_session_path, :method=>'delete') %>
-    </li>
-  <% else %>
-    <li>
-    <%= link_to('Login', new_user_session_path)  %>
-    </li>
-  <% end %>
-  <% if user_signed_in? %>
-    <li>
-    <%= link_to('Edit account', edit_user_registration_path) %>
-    </li>
-  <% else %>
-    <li>
-    <%= link_to('Sign up', new_user_registration_path)  %>
-    </li>
-  <% end %>
+<ul class="nav navbar-nav">
+  <li class="active"><%= link_to 'Home', root_path %></li>
+  <li><%= link_to 'Calendar', calendar_path %></li>
+  <li><%= link_to 'Past Events', pastevents_path %></li>
+  <li><%= link_to 'Contact', contact_path %></li>
+
+<% if user_signed_in? %>
+  <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
+<% else %>
+  <li><%= link_to 'Login', new_user_session_path %></li>
+<% end %>
+<% if user_signed_in? %>
+  <li><%= link_to 'Edit account', edit_user_registration_path %></li>
+<% else %>
+  <li><%= link_to 'Sign up', new_user_registration_path %></li>
+<% end %>
 </ul>
+
+<form class="navbar-form" role="search">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="search all archives">
+    <span class="input-group-addon">
+      <a href="#"><%= fa_icon "search" %></a>
+    </span>
+  </div>
+</form>

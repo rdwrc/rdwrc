@@ -67,7 +67,10 @@ GEM
     factory_girl_rails (4.2.1)
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
+    font-awesome-rails (4.0.3.0)
+      railties (>= 3.2, < 5.0)
     geocoder (1.1.8)
+    high_voltage (2.0.0)
     hike (1.2.3)
     i18n (0.6.5)
     jquery-rails (3.0.4)
@@ -180,7 +183,9 @@ DEPENDENCIES
   devise
   factory_girl (~> 4.2)
   factory_girl_rails (~> 4.2)
+  font-awesome-rails (~> 4.0)
   geocoder
+  high_voltage
   jquery-rails
   json
   mysql2

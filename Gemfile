@@ -16,6 +16,8 @@ gem 'will_paginate', '~> 3.0.0'
 gem 'geocoder'
 gem 'bootstrap-sass'
 gem 'simple_form', '>= 3.0.0.rc'
+gem "font-awesome-rails", '~> 4.0'
+gem 'high_voltage'
 
 gem 'sass-rails',   '~> 4.0.0'
 gem 'coffee-rails', '~> 4.0.0'
