@@ -27,15 +27,11 @@ $(function () {
   $('.span-fixed-sidebar').css('marginLeft', contentmargin);
   $('.span-fixed-sidebar').css('paddingLeft', 60);
 
-  /*
-  $(document).ready(function () {
-    $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
-  });
-  */
   // see http://stackoverflow.com/questions/9879169/how-to-get-twitter-bootstrap-navigation-to-show-active-link
   if (window.location.pathname.match('/users')) {
     $('.navbar .nav').find('a[href="/users/sign_in"]').parent().addClass('active');
   } else {
+    // when anything is devise related, then show LOGIN link as selected
     $('.navbar').find('.nav').find('a[href="' + window.location.pathname + '"]').parent().addClass('active');
   }
 });
