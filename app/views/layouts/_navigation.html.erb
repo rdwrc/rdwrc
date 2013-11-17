@@ -18,7 +18,7 @@
       <div class="input-group">
         <input type="text" class="form-control" placeholder="search all archives">
         <span class="input-group-addon">
-          <a href="#"><%= fa_icon "search" %></a>
+          <a href="#" onclick="$(this).closest('form').submit()"><%= fa_icon "search" %></a>
         </span>
       </div>
     </form>
