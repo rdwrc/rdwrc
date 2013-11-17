@@ -27,14 +27,15 @@ $(function () {
   $('.span-fixed-sidebar').css('marginLeft', contentmargin);
   $('.span-fixed-sidebar').css('paddingLeft', 60);
 
-  if (getURLPath().match(/manage_users/)) {
-    $('ul.navbar-nav li').removeClass('active');
-
-    anchor = $('ul.navbar-nav li').has('a[href="'+(getURLPath()+'.html')+'"]');
-    $(anchor).addClass('active');
+  /*
+  $(document).ready(function () {
+    $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+  });
+  */
+  // see http://stackoverflow.com/questions/9879169/how-to-get-twitter-bootstrap-navigation-to-show-active-link
+  if (window.location.pathname.match('/users')) {
+    $('.navbar .nav').find('a[href="/users/sign_in"]').parent().addClass('active');
+  } else {
+    $('.navbar').find('.nav').find('a[href="' + window.location.pathname + '"]').parent().addClass('active');
   }
 });
-
-function getURLPath() {
-  return window.location.pathname.replace('/', '').replace(/\.html$/, '');
-}

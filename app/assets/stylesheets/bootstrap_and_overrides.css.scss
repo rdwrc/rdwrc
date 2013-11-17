@@ -70,22 +70,20 @@ footer {
   }
 }
 
-.navbar-header {
+.navbar {
   li {
     &.active {
       color: white;
+      text-transform: uppercase;
     }
     &:not(.active) {
       color: $lightgrey;
     }
   }
-  li:hover {
-    &.active {
-      color: white;
-    }
-    &:not(.active) {
-      color: $tan;
-    }
+
+  .login-link {
+    font-size: 0.75em;
+    float: right;
   }
 }
 
@@ -93,6 +91,14 @@ footer {
   ul.navbar-nav {
     padding: 0px;
   }
+}
+
+.navbar-left {
+  width: 40%;
+}
+
+.navbar-right {
+  width: 60%;
 }
 
 blockquote {
