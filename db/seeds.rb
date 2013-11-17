@@ -8,34 +8,26 @@ contributor_role = Role.find_or_create_by(code: 'contributor', name: 'Contributo
 
 password = 'secret123'
 
-admin = User.find_or_create_by(name: 'Admin', email: 'admin@example.com')
-admin.password = password
-admin.password_confirmation = password
-admin.confirmed_at = Time.now
+User.destroy_all
+
+admin = User.new(name: 'Admin', email: 'admin@example.com', password: password, password_confirmation: password, confirmed_at: Time.now)
+admin.skip_confirmation!
 admin.save
 
-editor = User.find_or_create_by(name: 'Editor', email: 'editor@example.com')
-editor.password = password
-editor.password_confirmation = password
-editor.confirmed_at = Time.now
+editor = User.new(name: 'Editor', email: 'editor@example.com', password: password, password_confirmation: password, confirmed_at: Time.now)
+admin.skip_confirmation!
 editor.save
 
-author = User.find_or_create_by(name: 'Author', email:'author@example.com')
-author.password = password
-author.password_confirmation = password
-author.confirmed_at = Time.now
+author = User.new(name: 'Author', email:'author@example.com', password: password, password_confirmation: password, confirmed_at: Time.now)
+admin.skip_confirmation!
 author.save
 
-contributor = User.find_or_create_by(name: 'Contributor', email: 'contributor@example.com')
-contributor.password = password
-contributor.password_confirmation = password
-contributor.confirmed_at = Time.now
+contributor = User.new(name: 'Contributor', email: 'contributor@example.com', password: password, password_confirmation: password, confirmed_at: Time.now)
+admin.skip_confirmation!
 contributor.save
 
-guest = User.find_or_create_by(name: 'Guest', email: 'guest@example.com')
-guest.password = password
-guest.password_confirmation = password
-guest.confirmed_at = Time.now
+guest = User.new(name: 'Guest', email: 'guest@example.com', password: password, password_confirmation: password, confirmed_at: Time.now)
+admin.skip_confirmation!
 guest.save
 
 admin.roles << admin_role
