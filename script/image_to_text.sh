@@ -1,19 +1,44 @@
-#!/bin/bash -v
+#!/bin/bash
 #
 # see http://code.google.com/p/tesseract-ocr/
 # see http://www.sk-spell.sk.cx/tesseract-ocr-parameters-in-302-version
 #
-if [ $# != 2 ]; then
-  echo "$0: [1]=PDF or image file, [2]=output file name"
+
+if [ $# != 1 ]; then
+  echo "$0: PDF file is the only argument"
   exit 1
 fi
-output_folder='/tmp'
-filename=$1
-basename=`basename "${filename%.[^.]*}"`
-#output_file=`echo $basename | sed 's/\(.*\)\..*/\1/'`.txt
-output_file=$2
-tmp_file_name="output`date +%s`"
 
+if [ -d $HOME/local/share/tessdata ]
+then
+  export TESSDATA_PREFIX=$HOME/local/share/
+elif [ -d /usr/local/share/tessdata ]
+then
+  export TESSDATA_PREFIX=/usr/local/share/
+else
+  echo "$0: no tesseract data exists"
+  exit 2
+fi
+
+if [ -d $HOME/tmp ]
+then
+  output_folder="$HOME/tmp"
+elif [ -d /tmp ]
+then
+  output_folder="/tmp"
+else
+  echo "$0: no tmp directory exists"
+  exit 3
+fi
+
+filename=$1
+base_filename="${filename%.[^.]*}"
+basename=`basename $base_filename`
+tmp_file_name="$output_folder/output`date +%s`"
+
+#dbg filename="$HOME/public_html/dev/originals/Oregon newspaper reviews.pdf"
+
+echo "Creating image named '$tmp_file_name.png'"
 convert -density 300 "$filename" -depth 8 $tmp_file_name.png
 
 count=1
@@ -25,13 +50,7 @@ do
   count=`expr $count + 1`
 done
 rm $tmp_file_name*.png
-cat "$output_folder/$basename"*.txt > "$output_file"
+cat "$output_folder/$baseame"*.txt > "$base_filename".txt
 rm "$output_folder/$basename"*.txt
 
-if [[ -s $output_file ]] ; then
-  echo "CREATED '$output_file"
-else
-  echo "$output_file is empty."
-  exit -1
-fi
-
+echo "CREATED $base_filename.txt"
