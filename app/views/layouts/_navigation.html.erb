@@ -1,25 +1,49 @@
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <ul class="nav navbar-nav navbar-left">
-      <li><%= link_to 'Home', root_path %></li>
-      <li><%= link_to 'Calendar', calendar_path %></li>
-      <li><%= link_to 'Past Events', pastevents_path %></li>
-      <li><%= link_to 'Contact', contact_path %></li>
+  <div class="nav navbar-nav navbar-left">
+    <%= link_to image_tag('rdwrc_logo_tiny.jpg', alt: 'Home'), root_path %>
+  </div>
+  <ul class="nav nav-pills">
+    <li><%= link_to 'Home', root_path %></li>
+    <li><%= link_to 'Calendar', calendar_path %></li>
+    <li><%= link_to 'Past Events', pastevents_path %></li>
+    <li><%= link_to 'Contact', contact_path %></li>
 
-    <% if user_signed_in? %>
-      <li class="login-link"><%= link_to 'Profile', edit_user_registration_path %></li>
-      <li class="login-link"><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
-    <% else %>
-      <!-- li class="login-link"><%= link_to 'Sign up', new_user_registration_path %></li -->
-      <li class="login-link"><%= link_to 'Login', new_user_session_path %></li>
-    <% end %>
-    </ul>
+  <% if user_signed_in? %>
+    <li class="login-link"><%= link_to 'Profile', edit_user_registration_path %></li>
+    <li class="login-link"><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
+  <% else %>
+    <!-- li class="login-link"><%= link_to 'Sign up', new_user_registration_path %></li -->
+    <li class="login-link"><%= link_to 'Login', new_user_session_path %></li>
+  <% end %>
+  </ul>
 
-    <form class="navbar-form navbar-right" role="search">
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="search all archives">
-        <span class="input-group-addon">
-          <a href="#" onclick="$(this).closest('form').submit()"><%= fa_icon "search" %></a>
+  <form class="navbar-form navbar-right" role="search">
+    <div class="input-group">
+      <span class="input-group-btn">
+        <span class="btn btn-default" onclick="show_search_results();">
+          <i class="fa fa-search"></i>
         </span>
-      </div>
-    </form>
+      </span>
+      <input type="text" class="form-control" placeholder="search all archives">
+      <span class="input-group-btn">
+        <span class="btn btn-default" onclick="clear_search_text()">
+          <i class="fa fa-times"></i>
+        </span>
+      </span>
+    </div>
+  </form>
+  <div class="google-custom-search-box">
+    <script>
+      (function() {
+        var cx = '017719576301278948167:bmktl2iol5o';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search gname="rdwrc_search"></gcse:search>
+  </div>
 </div>

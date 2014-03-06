@@ -1,27 +1,25 @@
-<h1>The Ralph D. Winter Archives</h1>
-
 <div class="row">
   <aside class="col-md-2 outline">
       <ol>
         <li>
-          <a href="#">Papers</a>
+          <h5>Papers</h5>
           <ol>
-            <li><a href="#">Published</a></li>
-            <li><a href="#">Unpublished</a></li>
-            <li><a href="#">Letters</a></li>
-            <li><a href="#">Other materials</a></li>
+            <li><%= link_to 'Published', page_path('winter/published') %></li>
+            <li><%= link_to 'Unpublished', page_path('winter/unpublished') %></li>
+            <li><%= link_to 'Letters', page_path('winter/letters') %></li>
+            <li><%= link_to 'Other materials', page_path('winter/other') %></li>
           </ol>
         </li>
-        <li><a href="#">Audio presentations</a></li>
-        <li><a href="#">Video presentations</a></li>
-        <li><a href="#">Photographs</a></li>
+        <li><%= link_to 'Audio presentations', page_path('winter/audio') %></li>
+        <li><%= link_to 'Video presentations', page_path('winter/video') %></li>
+        <li><%= link_to 'Photographs', page_path('winter/photos') %></li>
         <li><a href="#">Related materials</a></li>
       </ol>
   </aside>
 
   <div class="col-md-10">
-    <div class="header">
-      <img class="img-rounded pull-right img-responsive" src="<%= asset_path "winter_at_messy_desk.jpg" %>" />
+    <div class="header clearfix">
+      <%= image_tag('winter_at_messy_desk.jpg', class: 'img-rounded pull-right img-responsive', alt: 'Ralph D. Winter desk') %>
       <div>
         <p class="lead">
           Ralph Dana Winter<span class="text-muted"> : <small><em>December 8, 1924 : May 20, 2009</em></small></span>
@@ -39,30 +37,37 @@
         </p>
         <p>
           Even though processing into these categories is not yet complete, materials can be made available to researchers who make advanced arrangements to visit the site. They must understand that the archival materials are still being processed.
-          Contact <a href="mailto:me@example.com">me@example.com</a> for details.
+          Contact <a href="mailto:info@ralphdwinter.org">info@ralphdwinter.org</a> for details.
         </p>
+        <p>
+          For more information on the legacy of Dr. Ralph D. Winter, you can visit his Wikipedia page: <a href="http://en.wikipedia.org/wiki/Ralph_D._Winter" target="_blank">http://en.wikipedia.org/wiki/Ralph_D._Winter</a>.
+        </p>
+
+        <%= image_tag('rdwrc_organizing_boxes.jpg', class: 'img-rounded pull-left img-responsive img-side-margin', alt: 'Ralph D. Winter categorizing materials') %>
+        <%= image_tag('rdwrc_category_boxes.jpg', class: 'img-rounded pull-left img-responsive img-side-margin', alt: 'Ralph D. Winter material categories') %>
+        <%= image_tag('rdwrc_category_boxes_details.jpg', class: 'img-rounded pull-left img-responsive img-side-margin', alt: 'Ralph D. Winter material category details') %>
       </div>
     </div>
 
     <div class="container well categories">
       <h5>Categories</h5>
       <ol>
-        <li><label>10 boxes</label> : Ralph D. Winter's writing and presentations</li>
-        <li><label>18 boxes</label> : Ralph D. Winter's correspondence (outside USCWM/WCIU)</li>
-        <li><label>7 boxes</label> : Ralph D. Winter's internal correspondence (within USCWM/WCIU)</li>
-        <li><label>23 boxes</label> : Ralph D. Winter's biographical information</li>
-        <li><label>1 box</label> : Course related material</li>
-        <li><label>15 boxes</label> : Collected miscellaneous materials of interest to Ralph D. Winter</li>
-        <li><label>40 boxes</label> : USCWM core records</li>
-        <li><label>29 boxes</label> : WCIU core records</li>
-        <li><label>4 boxes</label> : Perspectives on the World Christian Movement</li>
-        <li><label>3 boxes</label> : World Christian Foundations</li>
-        <li><label>17 boxes</label> : Programs and initiatives of USCWM/WCIU other than Perspectives and WCF</li>
-        <li><label>10 boxes</label> : Official publications of on-campus organizations (USCWM/WCIU and other agencies)</li>
-        <li><label>11 boxes</label> : Financial records</li>
-        <li><label>4 boxes</label> : FMF core records and joint USCWM/WCIU core records</li>
-        <li><label>3 boxes</label> : Meetings planned by us and meetings held on campus</li>
-        <li><label>5 boxes</label> : Organizations started by Ralph D. Winter fully or in part</li>
+        <li><span class="enumeration"> 1)</span> <label>16 boxes</label> : Dr. Winter's Writings and Presentations</li>
+        <li><span class="enumeration"> 2)</span> <label>24 boxes</label> : Dr. Winter's Correspondence (outside USCWM/WCIU)</li>
+        <li><span class="enumeration"> 3)</span> <label>10 boxes</label> : Dr. Winter's Internal Correspondence (within USCWM/WCIU Organizational Memos or Correspondence)</li>
+        <li><span class="enumeration"> 4)</span> <label>33 boxes</label> : Dr. Winter's Biographical Information</li>
+        <li><span class="enumeration"> 5)</span> <label>1 box</label> : Course-related materials</li>
+        <li><span class="enumeration"> 6)</span> <label>17 boxes</label> : Collected Material</li>
+        <li><span class="enumeration"> 7)</span> <label>48 boxes</label> : USCWM core records</li>
+        <li><span class="enumeration"> 8)</span> <label>32 boxes</label> : WCIU core records</li>
+        <li><span class="enumeration"> 9)</span> <label>6 boxes</label> : Perspectives on the World Christian Movement</li>
+        <li><span class="enumeration">10)</span> <label>4 boxes</label> : World Christian Foundations</li>
+        <li><span class="enumeration">11)</span> <label>20 boxes</label> : Programs and Initiatives of USCWM/WCIU other than Perspectives and WCF</li>
+        <li><span class="enumeration">12)</span> <label>11 boxes</label> : Official publications of on-campus organizations (USCWM/WCIU and other agencies)</li>
+        <li><span class="enumeration">13)</span> <label>13 boxes</label> : Financial records</li>
+        <li><span class="enumeration">14)</span> <label>6 boxes</label> : FMF core records and joint USCWM/WCIU core records</li>
+        <li><span class="enumeration">15)</span> <label>3 boxes</label> : Meetings planned by Us and Meetings Held on Campus</li>
+        <li><span class="enumeration">16)</span> <label>7 boxes</label> : Organizations Started by Dr. Winter Fully or In Part</li>
       </ol>
       <ol class="legend">
         <li><label>USCWM</label> - U.S. Center for World Missions</li>
@@ -70,6 +75,11 @@
         <li><label>WCF</label> - World Christian Foundations</li>
         <li><label>FMF</label> - Frontier Mission Fellowship</li>
       </ol>
+    </div>
+
+    <div class="header">
+      <%= image_tag('rdwrc_winter_middle_shelves.jpg', class: 'img-rounded pull-left img-responsive img-side-margin', alt: 'Ralph D. Winter books') %>
+      <%= image_tag('rdwrc_winter_back_shelves.jpg', class: 'img-rounded pull-left img-responsive img-side-margin', alt: 'Ralph D. Winter books') %>
     </div>
   </div>
 </div>

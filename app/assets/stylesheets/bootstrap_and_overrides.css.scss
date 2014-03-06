@@ -1,11 +1,10 @@
 @import "bootstrap";
-body { padding-top: 60px; }
 
 /* Variables */
 
 $verylightgrey: darken(white, 10%);
 $lightgrey: darken(white, 25%);
-$medgrey: darken(white, 50%);
+$mediumgrey: darken(white, 50%);
 $tan: lighten(#d2b48c, 28%);
 
 /* Global */
@@ -33,29 +32,87 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   min-height: 100%;
   display: block;
+  padding: 70px 0; /* needed for fix height header */
 }
 
 ul, ol {
   list-style-type: none;
   margin: 0px;
   padding: 10px;
+
+  &.photos {
+    clear: both;
+    li {
+      clear: both;
+      float: left;
+      img {
+        margin: 0px 10px 10px 0px;
+        border: 0px;
+      }
+    }
+  }
+
+  li {
+    &.calendar {
+      margin-bottom: 10px;
+    }
+    .date {
+      font-weight: bold;
+      font-size: 18px;
+      i {
+        padding-right: 5px;
+      }
+    }
+    .title, .speaker, .sponsor, .video {
+      padding-left: 30px;
+    }
+
+    .video i {
+      padding-right: 5px;
+    }
+
+    .list-date {
+      color: lightgray;
+      font-size: 14px;
+      font-weight: normal;
+    }
+
+    .list-pdf {
+      color: red;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
 }
 
 .header {
   margin: 20px;
-  img {
-    z-index: 1000;
+}
+img {
+  z-index: 1000;
+  &.img-margin {
+    margin: 10px;
+  }
+  &.img-side-margin {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
-footer {
+.footer {
   border-top: 1px solid $verylightgrey;
   padding: 1em;
   margin-top: 1em;
-  color: $lightgrey;
+
+  p {
+    color: $lightgrey;
+  }
 }
 
 .container {
+  .title {
+    color: $mediumgrey;
+  }
   &.headline {
     box-shadow: 5px 5px 20px $lightgrey;
   }
@@ -70,35 +127,50 @@ footer {
   }
 }
 
-.navbar {
-  li {
-    &.active {
-      color: white;
-      text-transform: uppercase;
-    }
-    &:not(.active) {
-      color: $lightgrey;
-    }
+.page-location {
+  img, h3 {
+    float: left;
+    clear: none;
   }
-
-  .login-link {
-    font-size: 0.75em;
-    float: right;
+  h3 {
+    margin: 10px 10px;
+    color: $lightgrey;
   }
 }
 
 .navbar-fixed-top {
-  ul.navbar-nav {
+  ul.nav-pills {
+    width: 45%;
+    float: left;
+    clear: none;
     padding: 0px;
+    margin: 5px;
+
+    .login-link {
+      margin-top: 0.25em;
+      font-size: 0.75em;
+      float: right;
+    }
+
+    a {
+      color: $lightgrey;
+      }
+    a:hover {
+      color: white;
+      background: #428bca;
+    }
+    .active {
+      a {
+        text-transform: uppercase;
+        color: white;
+        background: lighten(black, 25%);
+        font-weight: bold;
+      }
+    }
   }
-}
-
-.navbar-left {
-  width: 40%;
-}
-
-.navbar-right {
-  width: 60%;
+  form.navbar-right {
+    width: 50%;
+  }
 }
 
 blockquote {
@@ -117,6 +189,10 @@ blockquote {
   ol {
     label {
       width: 6em;
+      text-align: right;
+    }
+    .enumeration {
+      color: $lightgrey;
       text-align: right;
     }
   }
@@ -155,4 +231,14 @@ blockquote {
 
 .article {
   margin: 20px;
+}
+
+.sub-bullet {
+  text-indent: 20px;
+  padding-left: 20px;
+}
+
+.google-custom-search-box {
+  position: absolute;
+  top: -1000px;
 }

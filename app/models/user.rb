@@ -7,7 +7,6 @@ class User < ActiveRecord::Base
     :registerable,
     :rememberable,
     :timeoutable,
-    :trackable,
     :validatable
   ]
 

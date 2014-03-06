@@ -1,1 +1,73 @@
-<h1>Contact Us</h1>
+<div class="row">
+  <div class="col-md-10">
+    <div class="header">
+
+      <form class="form-horizontal" role="form" action="http://www.bluehost.com/bluemail" enctype="multipart/form-data" method="POST">
+        <input type="hidden" name="sendtoemail" value="info@dev.ralphdwinter.org">
+        <input type="hidden" name="text" value="0"> <!-- use HTML for email content -->
+        <input type="hidden" name="subject" value="Interest in Ralph D. Winter Research Center">
+        <input type="hidden" name="redirect" value="<%= contactsent_path %>"/>
+
+        <div class="form-group">
+          <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input name="mailfrom" type="email" class="form-control" id="inputEmail" placeholder="Email address">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputName" class="col-sm-2 control-label">Name</label>
+          <div class="col-sm-10">
+            <input name="Name" type="text" class="form-control" id="inputName" placeholder="Name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputState" class="col-sm-2 control-label">State</label>
+          <div class="col-sm-10">
+            <input name="State" type="text" class="form-control" id="inputState" placeholder="State or Province where you reside">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputCountry" class="col-sm-2 control-label">Country</label>
+          <div class="col-sm-10">
+            <input name="Country" type="text" class="form-control" id="inputCountry" placeholder="Country where you reside">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputOrganization" class="col-sm-2 control-label">Organization</label>
+          <div class="col-sm-10">
+            <input name="Organization" type="text" class="form-control" id="inputOrganization" placeholder="Organization you belong to">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputInterest" class="col-sm-2 control-label">Interest in<br/>Research Center</label>
+          <div class="col-sm-10">
+            <textarea name="Interest" class="form-control" rows="3" id="inputInterest"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label>
+                <input name="Send Newsletters" type="checkbox">Send Newsletters by email
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary">Send Contact Info</button>
+          </div>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</div>

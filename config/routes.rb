@@ -63,4 +63,5 @@ Rdwrc::Application.routes.draw do
   get 'calendar' => 'main#calendar'
   get 'pastevents' => 'main#past_events'
   get 'contact' => 'main#contact'
+  get 'contactsent' => 'main#contact_sent'
 end

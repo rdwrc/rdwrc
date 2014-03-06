@@ -8,6 +8,9 @@ class MainController < ApplicationController
   def past_events
   end
 
+  def contact_sent
+  end
+
   def contact
   end
 end

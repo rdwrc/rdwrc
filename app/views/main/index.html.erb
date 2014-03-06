@@ -1,6 +1,6 @@
 <div class="large">
   <div class="container headline">
-    <img class="img-rounded pull-left img-responsive" src="<%= asset_path "winters_in_guatamala_1960.jpg" %>" />
+    <%= image_tag('winters_in_guatamala_1960.jpg', class: 'img-rounded pull-left img-responsive', alt: 'Ralph D. Winter in Guatamala (1960)') %>
     <h1>The Ralph D. Winter Research Center</h1>
     <p>
       The Ralph D. Winter Research Center is focused on the archival holdings of Ralph D. Winter and Donald McGavran, but also hosts consultations on important current issues in missiology.
@@ -15,8 +15,8 @@
 
 <div class="large">
   <div class="container">
-    <img class="img-rounded pull-right img-responsive" src="<%= asset_path "ralph-winter-portrait.jpg" %>" />
-    <%= link_to image_tag("lausanne_1974/lausanne_1974_wordle_medium.png", class: "img-rounded pull-right img-responsive"), page_path('lausanne_1974/lausanne_1974') %>
+    <%= image_tag('ralph-winter-portrait.jpg', class: 'img-rounded pull-right img-responsive', alt: 'Ralph D. Winter portrait') %>
+    <%= link_to image_tag('lausanne_1974/lausanne_1974_wordle_medium.png', class: 'img-rounded pull-right img-responsive', alt: 'Lausanne 1974'), page_path('lausanne_1974/lausanne_1974') %>
     <div class="details">
       <h1>Ralph D. Winter archives</h1>
       <p class="lead">
@@ -42,7 +42,7 @@
 
 <div class="large">
   <div class="container">
-    <img class="img-rounded pull-right img-responsive" src="<%= asset_path "donald-mcgavran-portrait.jpg" %>" />
+    <%= image_tag('donald-mcgavran-portrait.jpg', class: 'img-rounded pull-right img-responsive', alt: 'Donald McGavran portrait') %>
     <div class="details">
       <h1>Donald McGavran archives</h1>
       <p class="lead">

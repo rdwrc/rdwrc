@@ -34,4 +34,27 @@ $(function () {
     // when anything is devise related, then show LOGIN link as selected
     $('.navbar').find('.nav').find('a[href="' + window.location.pathname + '"]').parent().addClass('active');
   }
+
+  $('.navbar-form').submit(function(e) {
+    e.preventDefault();
+    show_search_results();
+    return false;
+  });
 });
+
+/*
+  see https://developers.google.com/custom-search/
+  see https://developers.google.com/custom-search/docs/element
+  see https://developers.google.com/custom-search/docs/js/cselement-reference
+  see https://www.google.com/cse/create/getcode?cx=017719576301278948167%3Abmktl2iol5o
+*/
+function show_search_results() {
+  var queryStr = $('.navbar-form .form-control').first().val();
+  if (queryStr.length > 0) {
+    google.search.cse.element.getElement('rdwrc_search').execute(queryStr);
+  }
+}
+
+function clear_search_text() {
+  $('.navbar-form .form-control').first().val('');
+}

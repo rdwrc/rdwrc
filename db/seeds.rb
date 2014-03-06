@@ -11,23 +11,23 @@ password = 'secret123'
 User.destroy_all
 
 admin = User.new(name: 'Admin', email: 'admin@example.com', password: password, password_confirmation: password, confirmed_at: Time.now)
-admin.skip_confirmation!
+#admin.skip_confirmation!
 admin.save
 
 editor = User.new(name: 'Editor', email: 'editor@example.com', password: password, password_confirmation: password, confirmed_at: Time.now)
-admin.skip_confirmation!
+#editor.skip_confirmation!
 editor.save
 
 author = User.new(name: 'Author', email:'author@example.com', password: password, password_confirmation: password, confirmed_at: Time.now)
-admin.skip_confirmation!
+#author.skip_confirmation!
 author.save
 
 contributor = User.new(name: 'Contributor', email: 'contributor@example.com', password: password, password_confirmation: password, confirmed_at: Time.now)
-admin.skip_confirmation!
+#contributor.skip_confirmation!
 contributor.save
 
 guest = User.new(name: 'Guest', email: 'guest@example.com', password: password, password_confirmation: password, confirmed_at: Time.now)
-admin.skip_confirmation!
+#guest.skip_confirmation!
 guest.save
 
 admin.roles << admin_role
