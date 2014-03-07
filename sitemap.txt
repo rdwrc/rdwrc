@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" 
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url> 
+    <loc>http://dev.ralphdwinter.org/</loc> 
+    <loc>http://dev.ralphdwinter.org/index.html</loc>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/winters_in_guatamala_1960.jpg</image:loc> 
+      <image:title>Winters in Guatamala 1960</image:title> 
+      <image:geo_location>Guatamala</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/ralph-winter-portrait.jpg</image:loc> 
+      <image:title>Portrait of Ralph D. Winter</image:title> 
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/donald-mcgavran-portrait.jpg</image:loc> 
+      <image:title>Portrait of Donald McGavran</image:title> 
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://dev.ralphdwinter.org/rdwrc.html</loc> 
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_book_shelves_small.jpg</image:loc> 
+      <image:title>Ralph D. Winter books on library shelves at William Carey International University in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_mcgavran_file_cabinent_open_small.jpg</image:loc> 
+      <image:title>Donald McGavran records at William Carey International University library in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_mcgavran_file_cabinent_small.jpg</image:loc> 
+      <image:title>Donald McGavran records at William Carey International University library in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://dev.ralphdwinter.org/rdwrc_winter.html</loc> 
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/winter_at_messy_desk.jpg</image:loc> 
+      <image:title>Ralph D. Winter at his messy desk</image:title> 
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_organizing_boxes.jpg</image:loc> 
+      <image:title>Categorizing boxes at Ralph D. Winter Research Center in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_category_boxes.jpg</image:loc> 
+      <image:title>Categories of material at Ralph D. Winter Research Center in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_category_boxes_details.jpg</image:loc> 
+      <image:title>Detail of material category at Ralph D. Winter Research Center in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_winter_middle_shelves.jpg</image:loc> 
+      <image:title>Ralph D. Winter books at William Carey International University library in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_winter_back_shelves.jpg</image:loc> 
+      <image:title>Ralph D. Winter books in back room at William Carey International University library in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+  </url>
+  <url> 
+    <loc>http://dev.ralphdwinter.org/rdwrc_mcgavran.html</loc> 
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/donald_mcgavran.jpg</image:loc> 
+      <image:title>Donald McGavran at U.S. Center for World Missions in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_book_shelves_small.jpg</image:loc> 
+      <image:title>Donald McGavran books on library shelves at William Carey International University in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_mcgavran_file_cabinent_open_small.jpg</image:loc> 
+      <image:title>Donald McGavran records at William Carey International University library in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/rdwrc_mcgavran_file_cabinent_small.jpg</image:loc> 
+      <image:title>Donald McGavran records at William Carey International University library in Pasadena, CA</image:title> 
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/rdwrc_calendar.html</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/rdwrc_past_events.html</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/lausanne_1974.html</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/Lausanne_1974/Lausanne_1974.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/rdwrc_winter_published.html</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/rdwrc_winter_unpublished.html</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/rdwrc_winter_letters.html</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/rdwrc_winter_other.html</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/rdwrc_winter_audio.html</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1998%200115%20Winter%20Largest%20Stumbling%20Block.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1960__%20%20E%2012A.1%20Poverty%20and%20the%20Christian%20Mission.htm</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1970%20+-%20%20E%2011%20Do%20We%20Live%20Post-Christian%20World.htm</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1970%20E%2013%20Anthropologist%20looks%20at%20American%20Church.htm</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1971%200307%20E%2016%20Winter%20sermon-The%20Ugly%20Missionary.htm</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1999%20W1038.5%20Bell-Mackay.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/2006%200206%20W1426%20Does%20Mission%20Include%20Heaven%20and%20Earth.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/2006%200621%20W1448.2%20Eras%20of%20Mission%20History.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/2007%200128%20W1606%20The%20Mission%20of%20the%20Local%20Church.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/Crucial%20Mission%20Questions%20in%20the%20Seventies.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/Nazarene%20Seminary%20lecture%20plans%20and%20notes.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/PERT%20planning%20Berlin.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/Sunset%20or%20sunrise%20in%20world%20mission.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972%200322%20Winter%20let%20to%20start%20ASM.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972%200415%20Myklebust%20on%20need%20for%20intl.%20journal.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972%200520%20Winter%20let%20to%20follow-up%20Start%20of%20ASM.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972%200615%20ASM%20start%20press%20release.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972%200810%20G.Myyklebust%20letter%20on%20need%20for%20Miss.%20journal.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972%200830%20G.Anderson%20to%20C.Forman%20on%20start%20of%20ASM.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972%200830%20G.Anderson%20to%20D.Stowe%20on%20start%20of%20ASM.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972%200830%20G.Anderson%20to%20Tippett%20on%20journal%20issues_missiology.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972+-%20G.Anderson%20press%20release%20on%20IAMS.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972%20+-%20RDW%20handwritten%20note%20on%20PA-Miss%20issues.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1972%20+-%20RDW%20memo%20before%20L74.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1973%201030%20RDW%20let%20G.Anderson%20occ%20bul%20&amp;%20missiology.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1973%201112%20G.Anderson%20let%20RDW%20ASM_Miss.details.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1974%200506%20RDW%20let%20G.Anderson%20need%20for%20missiology%20journal.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1974%200607%20Tippet%20to%20MISSIOLOGY%20bd.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1974%200705%20Wagner%20definition%20of%20Church%20Growth.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/1992_1018_Dan_Fuller_to_RDW.html</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1999%201024%20Winter%20let%20to%20Billy%20Graham.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/2004%200404%20Winter%20let%20to%20hesselgrave.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/Oregon%20newspaper%20reviews.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/Nomadic%20studies%20holdings%20David%20E.%20Phillips.txt</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/What%20is%20the%20Church%20Growth%20School%20of%20Thought.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/pdfs/1992_1018_Dan_Fuller_to_RDW.pdf</loc>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/rdwrc_winter_video.html</loc>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/73829901
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/73829901
+      </video:player_loc>
+      <video:title>
+        CLIIS Strategy Lecture by Ralph D. Winter at William Carey International University
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/75249494
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/75249494
+      </video:player_loc>
+      <video:title>
+        Perspectives Lession 5 by Ralph D. Winter at William Carey International University
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/74517160
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/74517160
+      </video:player_loc>
+      <video:title>
+        The History of Missions> by Ralph D. Winter at William Carey International University
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/74704880
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/74704880
+      </video:player_loc>
+      <video:title>
+        Confronting the New Era in Missions by Ralph D. Winter at William Carey International University
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/66362763
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/66362763
+      </video:player_loc>
+      <video:title>
+        Ralph D. Winter and Eric Stadell at  U.S. Center for World Mission
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/3245294
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/3245294
+      </video:player_loc>
+      <video:title>
+        Do Hard Things by Ralph D. Winter at U.S. Center for World Mission
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/73918686
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/73918686
+      </video:player_loc>
+      <video:title>
+        Understanding the World Christian : Lecture 1 by Ralph D. Winter at Regent College
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/73971176
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/73971176
+      </video:player_loc>
+      <video:title>
+        Understanding the World Christian : Lecture 2 by Ralph D. Winter at Regent College
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/73996946
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/73996946
+      </video:player_loc>
+      <video:title>
+        Understanding the World Christian : Lecture 3 by Ralph D. Winter at Regent College
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/74174520
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/74174520
+      </video:player_loc>
+      <video:title>
+        Understanding the World Christian : Lecture 4 by Ralph D. Winter at Regent College
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/74903468
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/74903468
+      </video:player_loc>
+      <video:title>
+        Understanding the World Christian : Lecture 5 by Ralph D. Winter at Regent College
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/4791305
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/4791305
+      </video:player_loc>
+      <video:title>
+        Ralph D. Winter Tribute
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/5791707
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/5791707
+      </video:player_loc>
+      <video:title>
+        Ralph D. Winter Memorial Service : Part 1
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/5792833
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/5792833
+      </video:player_loc>
+      <video:title>
+        Ralph D. Winter Memorial Service : Part 2
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/5803035
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/5803035
+      </video:player_loc>
+      <video:title>
+        Ralph D. Winter Memorial Service : Part 3
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/5804638
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/5804638
+      </video:player_loc>
+      <video:title>
+        Ralph D. Winter Memorial Service : Part 4
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/5806234
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/5806234
+      </video:player_loc>
+      <video:title>
+        Ralph D. Winter Memorial Service : Part 5
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/81777640
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/81777640
+      </video:player_loc>
+      <video:title>
+        Vulnerable Missions by Jim Harries
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/78033884
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/78033884
+      </video:player_loc>
+      <video:title>
+        Vulnerable Missions : Dependency by Stan Nussbaum
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/79741526
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/79741526
+      </video:player_loc>
+      <video:title>
+        Vulnerable Missions : Resources by Jean Johnson
+      </video:title>
+    </video:video>
+    <video:video>
+      <video:content_loc>
+        http://vimeo.com/83715922
+      </video:content_loc>
+      <video:player_loc allow_embed="yes">
+        http://player.vimeo.com/video/83715922
+      </video:player_loc>
+      <video:title>
+        Vulnerable Missions : Panel Discussion
+      </video:title>
+    </video:video>
+  </url>
+  <url>
+    <loc>http://dev.ralphdwinter.org/rdwrc_winter_photos.html</loc>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1945 SIL (winter not in photo).jpg</image:loc>
+      <image:title>1945 - Summer on Linquistics class (Ralph D. Winter is not present)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/194_ Winter in Navy uniform.jpg</image:loc>
+      <image:title>1940's - Ralph D. Winter in US Navy uniform</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/194_ Winter in Navy with hat.jpg</image:loc>
+      <image:title>1940's - Ralph D. Winter in US Navy uniform</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1950_ Winter posed portrait.jpg</image:loc>
+      <image:title>1950 - Ralph D. Winter portrait</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1950_ Winters in front of church with car.jpg</image:loc>
+      <image:title>1950 - Winters in front of church next to car</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1955 Winter self portrait at desk.jpg</image:loc>
+      <image:title>1955 - Ralph D. Winter self portrait at desk</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1956_ Winter Guatamala with students.jpg</image:loc>
+      <image:title>1956 - Ralph D. Winter in Guatamala with students</image:title>
+      <image:geo_location>Gautamala</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1957_ Guatamala Winter traveling in room.jpg</image:loc>
+      <image:title>1957 - Ralph D. Winter in Guatamala</image:title>
+      <image:geo_location>Gautamala</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1957_ Guatamala Winter with Pecks - senior missionaries.jpg</image:loc>
+      <image:title>1957 - Ralph D. Winter in Guatamala with Pecks (senior missionaries)</image:title>
+      <image:geo_location>Gautamala</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1957+- Winters with senior mission leaders.jpg</image:loc>
+      <image:title>1957+ - Winters with senior mission leaders</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1958 Winter portrait bow-tie.jpg</image:loc>
+      <image:title>1958 - Ralph D. Winter portrait</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1958_ Winter with Guatamala men classroom.jpg</image:loc>
+      <image:title>1958 - Ralph D. Winterin Guatamala with men in classroom</image:title>
+      <image:geo_location>Gautamala</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1958_ Winter with men.jpg</image:loc>
+      <image:title>1958 - Winter with men</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/195_ Winter at messy desk.jpg</image:loc>
+      <image:title>1950's - Ralph D. Winter seated at messy desk</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/195_ Winter w:bros:father-mom.jpg</image:loc>
+      <image:title>1950's - Ralph D. Winter with brothers and parents</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1960_ Winters Guatamala at table with nationals.jpg</image:loc>
+      <image:title>1960 - Winters in Guatamala with nationals</image:title>
+      <image:geo_location>Gautamala</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1962 Winter Guatamala with group.jpg</image:loc>
+      <image:title>1962 - Ralph D. Winter with group</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1965 Winters with 4 girls.jpg</image:loc>
+      <image:title>1965 - Winters with their four children</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1965_ Winters with 4 girls.jpg</image:loc>
+      <image:title>1965 - Winters with their four children</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/196_ Winter portrait bowtie:smile.jpg</image:loc>
+      <image:title>1960's - Ralph D. Winter portrait</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1977_ USCWM - Winter with Tim L.jpg</image:loc>
+      <image:title>1977 - Ralph D. Winter with Tim Lahaye</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1977 Winter SIIS Perspectives Los Gatos Christian Church.jpg</image:loc>
+      <image:title>1977 - Ralph D. Winter SIIS Prspectives class at Los Gatos Christian Church</image:title>
+      <image:geo_location>Los Gatos, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1984 CT Lightbulb drawing of Winter.jpg</image:loc>
+      <image:title>1984 - Christianity Today drawing of Ralph D. Winter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1984 CT Winter on cover - with label.jpg</image:loc>
+      <image:title>1984 - Christianity Today drawing of Ralph D. Winter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1984_ Urbana convention with Winter.jpg</image:loc>
+      <image:title>1984 - Ralph D. Winter at Urbana</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1985 Hugo Winter OLDER-portrait.jpg</image:loc>
+      <image:title>1985 - Hugo Winter : Ralph D. Winter's father</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1985_ Winter talking with small group.jpg</image:loc>
+      <image:title>1985 - Ralph D. Winter talking to small group</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1987_ Winter making a point to group.jpg</image:loc>
+      <image:title>1987 - Ralph D. Winter making a point to a group</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/198_ Winter portrait (use at end_).jpg</image:loc>
+      <image:title>1980's - Ralph D. Winter portrait</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/1994_ Winter and Emery OLDER.jpg</image:loc>
+      <image:title>1994 - Ralph D. Winter and Emery</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/2004 Barb and Ralph Winter.jpg</image:loc>
+      <image:title>2004 - Ralph and Barb Winter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/2004 WHOLE Winter clan.jpg</image:loc>
+      <image:title>Winter family reunion</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/2004 Winter with Asian leaders.jpg</image:loc>
+      <image:title>2004 - Ralph D. Winter with Asian leaders</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/2006 Ralph and Barbara Winter.jpg</image:loc>
+      <image:title>2006 - Ralph and Barbara Winter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/2007 Bangkok - Cho Winter Aghamkar.jpg</image:loc>
+      <image:title>2007 - Bangkok : Ralph D. Winter, Cho and Aghamkar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/2007 Winter at Bangkok conference.jpg</image:loc>
+      <image:title>2007 - Winter at Bangkok conference</image:title>
+      <image:geo_location>Bangkok, Thailand</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/2007 Winter at Olivet Univ graduates.jpg</image:loc>
+      <image:title>2007 - Ralph D. Winter with Olivet University graduates</image:title>
+      <image:geo_location>Bourbonnais, Illinois</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/2007 Winter dedication of Library in his honor.jpg</image:loc>
+      <image:title>2007 - Ralph D. Winter at library dedication in his honor</image:title>
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/2008 Aug 25 Winter award w:k me barb.jpg</image:loc>
+      <image:title>2008 - Ralph D. Winter award on August 25th</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Dr Winter black and white.jpg</image:loc>
+      <image:title>Ralph D. Winter in black & white</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Dr Winter color.jpg</image:loc>
+      <image:title>Ralph D. Winter in color</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Dr Winter contemplation at desk.jpg</image:loc>
+      <image:title>Ralph D. Winter in contemplation at desk</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Dr Winter drawing.jpg</image:loc>
+      <image:title>Ralph D. Winter drawing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Dr Winter withRory Clark.jpg</image:loc>
+      <image:title>Ralph D. Winter with Rory </image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/L Koch, B Sells and Winters.jpg</image:loc>
+      <image:title>Winters with L. Koch and B. Sells</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/quote.jpg</image:loc>
+      <image:title>Ralph D. Winter quote</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Ralph and Barbara Winter 2.jpg</image:loc>
+      <image:title>Ralph and Barbara Winter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Ralph and Barbara Winter.jpg</image:loc>
+      <image:title>Ralph and Barbara Winter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Ralph D Winter.jpg</image:loc>
+      <image:title>Ralph D. Winter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Ralph Winter.jpg</image:loc>
+      <image:title>Ralph D. Winter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/TheWinters.jpg</image:loc>
+      <image:title>Ralph and Barbara Winter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/USCWM Winters.jpg</image:loc>
+      <image:title>Ralph and Barbara Winter at U.S. Center for World Mission</image:title>
+      <image:geo_location>Pasadena, California</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Walking Winters.jpg</image:loc>
+      <image:title>Ralph and Barbara Winter walking</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/WikiWinter1.jpg</image:loc>
+      <image:title>elderly Ralph D. Winter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/WINTER from SWM at Forty stairs.jpg</image:loc>
+      <image:title>Ralph D. Winter at SWM</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Winters at Flynns.jpg</image:loc>
+      <image:title>Ralph and Barbara Winter at Flynns</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/winter speaking access 2.jpg</image:loc>
+      <image:title>Ralph D. Winter speaking</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/winter speaking access.jpg</image:loc>
+      <image:title>Ralph D. Winter speaking</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>http://dev.ralphdwinter.com/images/photos/Winter talking with B. Taylor in office.jpg</image:loc>
+      <image:title>Ralph D. Winter with Bev Taylor in his office</image:title>
+    </image:image>
+  </url>
+</urlset>
