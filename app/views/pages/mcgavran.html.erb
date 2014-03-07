@@ -1,3 +1,8 @@
+<% add_breadcrumb "Home", :root_path %>
+<% add_breadcrumb "Donald McGavran Archives", request.path %>
+
+<%= render_breadcrumbs :builder => ::BootstrapBreadcrumbsBuilder %>
+
 <div class="row">
   <aside class="col-md-2 outline">
       <ol>
@@ -48,7 +53,7 @@
       </div>
 
       <%= image_tag('rdwrc_book_shelves_small.jpg', class: 'img-rounded pull-left img-responsive', alt: 'Donald McGavran books') %>
-      <%= image_tag('rdwrc_mcgavran_file_cabinent_open_small.jpg', class: 'img-rounded pull-left img-responsive', alt: 'Donald McGavran records') %>
+      <%= image_tag('rdwrc_mcgavran_file_cabinent_open_small.jpg', class: 'img-side-margin img-rounded pull-left img-responsive', alt: 'Donald McGavran records') %>
       <%= image_tag('rdwrc_mcgavran_file_cabinents_small.jpg', class: 'img-rounded pull-left img-responsive', alt: 'Donald McGavran records') %>
     </div>
   </div>

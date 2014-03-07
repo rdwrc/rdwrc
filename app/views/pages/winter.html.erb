@@ -1,3 +1,8 @@
+<% add_breadcrumb "Home", :root_path %>
+<% add_breadcrumb "Ralph D. Winter Archives", request.path %>
+
+<%= render_breadcrumbs :builder => ::BootstrapBreadcrumbsBuilder %>
+
 <div class="row">
   <aside class="col-md-2 outline">
       <ol>

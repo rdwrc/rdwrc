@@ -1,3 +1,8 @@
+<% add_breadcrumb "Home", :root_path %>
+<% add_breadcrumb "Ralph D. Winter Research Center", request.path %>
+
+<%= render_breadcrumbs :builder => ::BootstrapBreadcrumbsBuilder %>
+
 <div class="row">
   <div class="col-md-10">
     <div class="header">
