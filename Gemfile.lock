@@ -32,6 +32,7 @@ GEM
     bcrypt-ruby (3.1.2)
     bootstrap-sass (3.0.2.1)
       sass (~> 3.2)
+    breadcrumbs_on_rails (2.3.0)
     builder (3.1.4)
     cancan (1.6.10)
     climate_control (0.0.3)
@@ -177,6 +178,7 @@ PLATFORMS
 DEPENDENCIES
   acts-as-taggable-on
   bootstrap-sass
+  breadcrumbs_on_rails
   cancan
   coffee-rails (~> 4.0.0)
   debugger
