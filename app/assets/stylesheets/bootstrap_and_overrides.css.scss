@@ -127,24 +127,30 @@ img {
   }
 }
 
-.page-location {
-  img, h3 {
-    float: left;
-    clear: none;
-  }
-  h3 {
-    margin: 10px 10px;
-    color: $lightgrey;
-  }
-}
-
 .navbar-fixed-top {
   ul.nav-pills {
     width: 45%;
     float: left;
     clear: none;
-    padding: 0px;
+
+    /* iPhone 5 in portrait & landscape */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 568px) {
+      width: 100%;
+      clear: right;
+    }   
+
+    /* All Smartphones in portrait and landscape ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+      width: 100%;
+      clear: right;
+    }
+
     margin: 5px;
+    padding: 0px;
 
     .login-link {
       margin-top: 0.25em;
@@ -167,9 +173,34 @@ img {
         font-weight: bold;
       }
     }
+
+    .logo {
+      margin: 0px;
+      padding: 0px;
+      a {
+        margin: 0px;
+        padding: 0px;
+      }
+    }
   }
   form.navbar-right {
     width: 50%;
+
+    /* iPhone 5 in portrait & landscape */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 568px) {
+      margin: 0 5%;
+      width: 90%;
+    }
+
+    /* All Smartphones in portrait and landscape ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+      margin: 0 5%;
+      width: 90%;
+    }
   }
 }
 

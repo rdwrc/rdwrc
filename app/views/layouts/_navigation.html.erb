@@ -1,8 +1,6 @@
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="nav navbar-nav navbar-left">
-    <%= link_to image_tag('rdwrc_logo_tiny.jpg', alt: 'Home'), root_path %>
-  </div>
   <ul class="nav nav-pills">
+    <li class="logo"><%= link_to image_tag('rdwrc_logo_tiny.jpg', alt: 'Home'), root_path %></li>
     <li><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'Calendar', calendar_path %></li>
     <li><%= link_to 'Past Events', pastevents_path %></li>
