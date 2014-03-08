@@ -5,7 +5,6 @@
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url> 
     <loc>http://dev.ralphdwinter.org/</loc> 
-    <loc>http://dev.ralphdwinter.org/index.html</loc>
     <image:image>
       <image:loc>http://dev.ralphdwinter.com/images/winters_in_guatamala_1960.jpg</image:loc> 
       <image:title>Winters in Guatamala 1960</image:title> 
@@ -631,7 +630,7 @@
     </image:image>
     <image:image>
       <image:loc>http://dev.ralphdwinter.com/images/photos/Dr Winter black and white.jpg</image:loc>
-      <image:title>Ralph D. Winter in black & white</image:title>
+      <image:title>Ralph D. Winter in black and white</image:title>
     </image:image>
     <image:image>
       <image:loc>http://dev.ralphdwinter.com/images/photos/Dr Winter color.jpg</image:loc>
